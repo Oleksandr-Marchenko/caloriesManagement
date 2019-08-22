@@ -4,7 +4,7 @@
     <title>Home Project (CaloriesManagement)</title>
 </head>
 <body>
-<h3>Проект <a href="https://github.com/sanya802" target="_blank">##############</a></h3>
+<h3>Проект <a href="https://github.com/aleks802" target="_blank">HomeSpringBootProject</a></h3>
 <hr>
 <ul>
     <li><a href="users">Users</a></li>
