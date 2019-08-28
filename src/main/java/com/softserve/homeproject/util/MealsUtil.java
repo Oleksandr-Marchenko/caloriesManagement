@@ -1,7 +1,7 @@
 package com.softserve.homeproject.util;
 
 import com.softserve.homeproject.model.Meal;
-import com.softserve.homeproject.model.MealTo;
+import com.softserve.homeproject.to.MealTo;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -32,7 +32,7 @@ public class MealsUtil {
     }
 
     public static List<MealTo> getFilteredWithExcess(List<Meal> meals, int caloriesPerDay, LocalTime startTime, LocalTime endTime) {
-        return getFilteredWithExcess(meals, caloriesPerDay, meal -> DateTimeUtil.isBetween(meal.getTime(), startTime, endTime));
+        return getFilteredWithExcess(meals, caloriesPerDay, meal -> Util.isBetween(meal.getTime(), startTime, endTime));
     }
 
     private static List<MealTo> getFilteredWithExcess(List<Meal> meals, int caloriesPerDay, Predicate<Meal> filter) {
